@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap');
+
+:host {
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    min-height: 100vh;
+    background-color: #f5b700;
+    color: #4a4a4a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 800px;
+    max-width: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 40px;
+    border-radius: 8px;
+}
+
+header h1 {
+    font-family: 'Lobster', cursive;
+    color: #f5b700;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.info-panaderia {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.formulario-pedido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.input-group label {
+    font-weight: bold;
+}
+
+input, select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[disabled] {
+    background-color: #e9ecef;
+    font-weight: bold;
+    text-align: right;
+}
+
+#precio-unitario, #total-linea {
+    width: 60px;
+}
+
+#cantidad {
+    width: 50px;
+}
+
+#btn-anadir {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#btn-anadir:hover {
+    background-color: #45a049;
+}
+
+#tabla-ticket {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#tabla-ticket thead {
+    background-color: #006400;
+    color: white;
+}
+
+#tabla-ticket th, #tabla-ticket td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#tabla-ticket td {
+    background-color: #f2f2f2;
+}
+
+.borrar-btn {
+    font-size: 1.2em; 
+    cursor: pointer; 
+    display: block; 
+    text-align: center;
+    transition: transform 0.2s ease-in-out; 
+}
+
+.borrar-btn:hover {
+    transform: scale(1.2);
+}
+
+.resumen-total {
+    text-align: right;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 2px solid #006400;
+}
+
+.resumen-total h2 {
+    color: #333;
+}
+
+#btn-imprimir {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+#btn-imprimir:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 15px 20px;
+    }
+
+    .formulario-pedido {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .input-group {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #tabla-ticket {
+        font-size: 0.9em;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+}
