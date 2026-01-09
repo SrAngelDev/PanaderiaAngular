@@ -1,6 +1,6 @@
 [build]
   command = "npm run build"
-  publish = "dist/JovenesAngular/browser"
+  publish = "dist/PanaderiaAngular/browser"
 
 [[redirects]]
   from = "/*"
